@@ -314,8 +314,22 @@ elif (given_data=="years ago and the no of times equal to years"):
         print(person_1-year_ago_person_age)
     elif (check=="2"):
         print(person_2-year_ago_person_age)
-
-
+elif (given_data=="given three person ratio and diff 2 persons and find the other 2persons diff"):
+    person_1=int(input("enter the person_1"))
+    person_2 = int(input("enter the person_2"))
+    person_3 = int(input("enter the person_3"))
+    diff_two_persons=int(input("enter the diff of two persons"))
+    check=input("enter two persons 1 and 2 take enter 1 or 2 and 3 enter 2 or 1 and 3 enter 3")
+    value_of_x=0
+    if (check==1):
+        lower=abs(person_1-person_2)
+        valu_of_x=diff_two_persons/lower
+    elif(check=="2"):
+        lower=abs(person_2-person_3)
+        value_of_x=diff_two_persons
+    elif (check=="3"):
+        lower=abs(person_1-person_3)
+        value_of_x=diff_two_persons
 
 
 
