@@ -1,4 +1,4 @@
-## question 17
+## question 17 finding the difference of two persons
 a=int(input("enter value for a : "))
 b=int(input("enter value for b : "))
 c=int(input("enter the hence year : "))
