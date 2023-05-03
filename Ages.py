@@ -271,6 +271,49 @@ elif given_data=="given difference and year ago age find the persent age":
         print(person_1*value_of_x)
     elif check=="2":
         print(person_2*value_of_x)
+elif given_data=="given sum and persons age n years ago find the prasent age":
+    person_1=int(input("enter the peson_1"))
+    person_2= int(input("enter the peson_2"))
+    person_3= int(input("enter the peson_3"))
+    year_ago=int(input("enter the year ago"))
+    sum_ages=int(input("enter the sum"))
+    n_of_persons=int(input("enter the no of persons"))
+    upper=sum_ages-(n_of_persons*year_ago)
+    lower=person_1+person_2+person_3
+    value_of_x=upper/lower
+    check=input("enter 1 for person_1 and 2 for person_2 and 3 for person_3")
+    if (check=="1"):
+        print(person_1*value_of_x)
+    elif (check=="2"):
+        print(person_2*value_of_x)
+    elif (check=="3"):
+        print((person_3*value_of_x))
+elif (given_data=="find the younest from the persons"):
+    no_of_persons=int(input("enter the noof persons"))
+    count=0
+    increase_each=int(input("enter each"))
+    sum_ages=int(input("enter the sum"))
+    for i in range(1,no_of_persons):
+        count+=i*increase_each
+    valu_of_x=(sum_ages-count)/no_of_persons
+    print(valu_of_x)
+elif (given_data=="years ago and the no of times equal to years"):
+    year_ago=int(input("enter the year ago"))
+    person_1=0;
+    no_of_equal=int(input("enter the no of equal the person_1"))
+    upper=int(input("enter numerator value of person_2"))
+    lower=int(input("enter denomenator value of person_2"))
+    upper_value_of_x=year_ago
+    lower_value_of_x=1-no_of_equal
+    value_of_x=upper_value_of_x/lower_value_of_x
+    person_1=value_of_x+year_ago
+    person_2=(upper/lower)*value_of_x
+    year_ago_person_age=int(input("enter the year ago person_2"))
+    check=input("person_1 enter 1 or enter person_2 2")
+    if (check=="1"):
+        print(person_1-year_ago_person_age)
+    elif (check=="2"):
+        print(person_2-year_ago_person_age)
 
 
 
