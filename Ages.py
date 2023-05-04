@@ -299,7 +299,7 @@ elif (given_data=="find the younest from the persons"):
     print(valu_of_x)
 elif (given_data=="years ago and the no of times equal to years"):
     year_ago=int(input("enter the year ago"))
-    person_1=0;
+    person_1=0
     no_of_equal=int(input("enter the no of equal the person_1"))
     upper=int(input("enter numerator value of person_2"))
     lower=int(input("enter denomenator value of person_2"))
