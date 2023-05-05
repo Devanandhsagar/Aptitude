@@ -21,7 +21,14 @@ elif (check == "3"):
     person_3 = float(1)
     person_1 = float(val_1 / val_2)
     person_2 = float(val_3 / val_4)
+print(" person_1 + person_2 + person_3")
+print(f' {person_1} + {person_2} + {person_3} ')
 lower = person_1 + person_2 + person_3
-upper = sum_of_ages
+print(f'sum of ages is  {sum_of_ages} years ')
+upper=sum_of_ages
 value_of_x = int(upper / lower)
-person_call = input("enter 1 for person_1 and enter 2 person_2 and enter 3 person_3")
+print("value of x = " + str(value_of_x))
+print(str(upper) + "/"+str(lower))
+print(f'ans = ( {val_1} / {val_2} ) x {value_of_x} ')
+ans=person_2 * (value_of_x)
+print(" mohan age is = " + str(ans) +" years")

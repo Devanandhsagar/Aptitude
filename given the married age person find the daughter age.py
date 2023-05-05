@@ -8,9 +8,12 @@ d=int(input("enter the years ago age : "))
 b=float(b1/b2)
 c=float(c1/c2)
 e=int(round(a/(b-1)))
+print(" e = a/(b-1)")
+print(f' e = {a} / ( {b} - {1} )')
 f=c*(e+a)
+print(f' f = (( {c1}/{c2} ) x ( {e} + {a} ))')
 if (given_data=="2"):
-    print(f' prasent age father is = {e}')
+    print(f' prasent age father is = {e + a}')
     print(f' daughters age {d} yeras ago =  f - d = {f-d} years ')
 elif(given_data=="1"):
     print(f' person_2 age is  {e} - {c} ={e-c} years')

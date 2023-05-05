@@ -1,0 +1,13 @@
+
+b=int(input("enter the persent ratio_2 : "))
+a=int(input("enter n years ago : "))
+c=int(input(("enter the no of times equal : ")))
+formula=abs((c*a)-a)/abs(b-c)
+print("formula = ((c*a)-a)/ (b-c)")
+print(f' formula = ( {a} x {c} )- {a} / ( {b} - {c} )')
+print(f' {formula} ')
+print("prasent age is person_1 =  b * formula")
+print(f' prasent age is person_1 is {(b*formula)} years')
+print(f' prasent age is person_2 is {formula} years')
+print(f' sum of the ages is ((b * formula) + (formula) + ( 2 * (formula)) years')
+print(f' sum of the ages is {((b*formula)+ (formula)+(2*(formula)))} years')

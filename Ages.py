@@ -102,6 +102,7 @@ elif (given_data=="product age and sum ages"):
         person_1=int(input("enter person_1"))
         person_2=int(input("enter person_2"))
         pr=int(input("enter the product of ages"))
+        print(" value_of_x = sqrt (pr /(person_1 * person_2))")
         value_of_x=sqrt(pr/(person_1*person_2))
         after_year=int(input("enter year of hence : "))
         print(str((person_1*value_of_x)+after_year)+"/"+str((person_2*value_of_x)+after_year))
@@ -132,18 +133,22 @@ elif (given_data=="sum of three persons and ages ratio"):
     persent_ages_of_persons= input(
         "if person_1 agw enter 1 or person_2 age enter 2 or person_3 age enter 3 : ")
     sum_ages = int(input("enter the sum : "))
-    upper = abs(sum_ages - (3*year))
-    lower = abs(person_1 + person_1 +person_2)
-    value_of_x = upper / lower
+    print(" upper = abs(sum_ages + (3*year))")
+    upper = abs(sum_ages + (3*year))
+    print("lower = (person_3) / (person_1 + person_1 +person_2)")
+    lower = (person_3/(person_1 + person_3 +person_2))
+    print("value_of_x = upper x lower")
+    value_of_x = upper * lower
+    print("value_of_x = "+str(value_of_x))
     if (persent_ages_of_persons=="1"):
         print(person_1*value_of_x)
     elif(persent_ages_of_persons=="2"):
         print(person_2*value_of_x)
     else:
-        print(person_3*value_of_x)
+        print(f' person_3 age is {value_of_x} years')
 elif (given_data=="given persent age and after  age ratios find the n year ago"):
-    person_1=int(input("enter the persent age person_1"))
-    person_2=int(input("enter the psent age person_2"))
+    person_1=int(input("enter the present age person_1"))
+    person_2=int(input("enter the present age person_2"))
     person_1_after=int(input("enter the after person_1 ratio"))
     person_2_after=int(input("enter the after person-2 ratio"))
     upper=abs((person_1*person_2_after)-(person_2*person_1_after))
@@ -174,24 +179,35 @@ elif (given_data=="n years ago the ages no of times person_1"):
     year=int(input("enter year"))
     no_of_times=int(input("enter no of times person_1 is equal to person_2 : "))
     upper=abs((n+year)-(no_of_times*(n+year)))
+    print("upper = ((n + year) - (no_of_times * (n + year)))")
     lower=abs((person_1)-(no_of_times*(person_2)))
+    print("lower = ((person_1) - (no_of_times * (person_2)))")
     value_of_x=upper/lower
+    print("value_of_x = upper / lower")
     check=input("enter sum of ages 1 or enter diff of ages 2 or enter both pesent ages 3 or enter persom_1 ages 4 or enter person_2 age 5 or enter year ago person_1 age 6 or enter year ago person_2 age 7 ")
     if (check=="1"):
-        print(abs(person_1-person_2)*value_of_x)
+        print("(person_1 + person_2) * value_of_x")
+        print(abs(person_1+person_2)*value_of_x)
     elif (check=="2"):
+        print("((person_1 - person_2) * value_of_x ))")
         print(abs((person_1-person_2)*value_of_x))
     elif (check=="3"):
+        print("( person_1 * value_of_x ) + n")
         print((person_1*value_of_x)+n)
+        print("((person_2 * value_of_x) + n)")
         print((person_2 * value_of_x)+n)
     elif (check=="4"):
+        print("(person_1 * value_of_x) + n")
         print((person_1 * value_of_x)+n)
     elif(check=="5"):
+        print("(person_2 * value_of_x) + n")
         print((person_2 * value_of_x)+n)
     elif(check=="6"):
+        print("(person_1 * value_of_x) - n")
         print((person_1 * value_of_x)-n)
     else:
         if (check=="7"):
+            print("(person_2 * value_of_x) - n")
             print((person_2 * value_of_x)-n)
         elif (check=="8"):
             ans=((person_1*value_of_x)+n)/((person_2*value_of_x)+n)
@@ -204,12 +220,17 @@ elif (given_data=="n years ago the ages no of times both person"):
     no_of_times_1=int(input("enter no of times person_1 is : "))
     no_of_times_2 = int(input("enter no of times person_2 is : "))
     upper=abs((no_of_times_1*(n+add_year))-(no_of_times_2*(n+add_year)))
+    print("upper=abs((no_of_times_1*(n+add_year))-(no_of_times_2*(n+add_year)))")
     lower=abs(no_of_times_1*(person_2)-(no_of_times_2*(person_1)))
+    print("lower=abs(no_of_times_1*(person_2)-(no_of_times_2*(person_1)))")
     value_of_x=upper/lower
+    print(" value_of_x = upper/ lower")
     check=input("enter sum of ages 1 or enter diff of ages 2 or enter both pesent ages 3 or enter persom_1 ages 4 or enter person_2 age 5 or enter year ago person_1 age 6 or enter year ago person_2 age 7 : ")
     if (check=="1"):
+        print("((person_1 * value_of_x) + n) + ((person_2 * value_of_x) + n)")
         print(((person_1*value_of_x)+n)+((person_2*value_of_x)+n))
     elif (check=="2"):
+        print("((person_1 * value_of_x) - (person_2 * value_of_x))")
         print(abs((person_1 * value_of_x) - (person_2 * value_of_x)))
     elif (check=="3"):
         print((person_1*value_of_x)+n)
@@ -295,6 +316,7 @@ elif (given_data=="find the younest from the persons"):
     sum_ages=int(input("enter the sum"))
     for i in range(1,no_of_persons):
         count+=i*increase_each
+    print(" valu_of_x = (sum_ages - count) / no_of_persons")
     valu_of_x=(sum_ages-count)/no_of_persons
     print(valu_of_x)
 elif (given_data=="years ago and the no of times equal to years"):
